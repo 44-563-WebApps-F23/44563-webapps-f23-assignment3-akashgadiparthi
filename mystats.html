@@ -50,5 +50,20 @@
         <td>5-7 hours</td>
     </tr>
   </table>
+
+ <hr>
+ <h4>Snippet code</h4>
+ <blockquote cite="https://stackoverflow.com/questions/48886601/how-to-properly-make-301-redirect">how-to-properly-make-301-redirect</blockquote> 
+ <a href="https://css-tricks.com/snippets/htaccess/301-redirects/">Link for question</a>
+
+ <pre>
+    RewriteEngine on
+    Redirect 301 /oldfolder/file1.html /newfolder/file1.html
+    Redirect 301 /oldfolder/file2.html /newfolder/file2.html
+    
+    RewriteEngine on
+    RewriteRule ^oldfolder/(.*)$ /newfolder/$1 [R=301,NC,L]
+ </pre>   
+ <a href="https://css-tricks.com/snippets/htaccess/301-redirects/">Solution</a>
 </body>
 </html>
